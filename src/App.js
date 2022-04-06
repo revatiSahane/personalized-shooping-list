@@ -26,15 +26,15 @@ function App() {
       <BrowserRouter>
         <Navbar product={product} />
         <Routes>
-          <Route exact path="/input" element={<Input setProduct={setProduct} product={product} />}>
+          <Route exact path="/input" element={<Input setProduct={setProduct} product={product} />}/>
             
-          </Route>
-          <Route exact path="/lists" element={<Lists product={product} deleteProduct={deleteProduct} />}>
+          
+          <Route exact path="/lists" element={<Lists product={product} deleteProduct={deleteProduct} />}/>
             
-          </Route>
-          <Route exact path="/" element={<HomePage />}>
+         
+          <Route exact path="/" element={<HomePage />}/>
             
-          </Route>
+          
         </Routes>
       </BrowserRouter>
     </>
